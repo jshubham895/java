@@ -1,0 +1,217 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Solution",
+            "request": "launch",
+            "mainClass": "shubham.Solution",
+            "projectName": "java_60a0e022"
+        },
+        {
+            "type": "java",
+            "name": "Launch SolutionClass",
+            "request": "launch",
+            "mainClass": "shubham.SolutionClass",
+            "projectName": "java_60a0e022"
+        },
+        {
+            "type": "java",
+            "name": "Launch fibonacci",
+            "request": "launch",
+            "mainClass": "shubham.fibonacci",
+            "projectName": "java_60a0e022"
+        },
+        {
+            "type": "java",
+            "name": "Launch recursion",
+            "request": "launch",
+            "mainClass": "shubham.recursion",
+            "projectName": "java_60a0e022"
+        },
+        {
+            "type": "java",
+            "name": "Launch subarraySumEqualsK",
+            "request": "launch",
+            "mainClass": "shubham.subarraySumEqualsK",
+            "projectName": "java_60a0e022"
+        },
+        {
+            "type": "java",
+            "name": "Launch minJumps",
+            "request": "launch",
+            "mainClass": "shubham.minJumps",
+            "projectName": "java_60a0e022"
+        },
+        {
+            "type": "java",
+            "name": "Launch CodeChef",
+            "request": "launch",
+            "mainClass": "shubham.CodeChef",
+            "projectName": "java_60a0e022"
+        },
+        {
+            "type": "java",
+            "name": "Launch trees",
+            "request": "launch",
+            "mainClass": "shubham.trees",
+            "projectName": "java_60a0e022"
+        },
+        {
+            "type": "java",
+            "name": "Launch sample",
+            "request": "launch",
+            "mainClass": "shubham.sample",
+            "projectName": "java_60a0e022"
+        },
+        {
+            "type": "java",
+            "name": "Launch kickstart",
+            "request": "launch",
+            "mainClass": "shubham.kickstart",
+            "projectName": "java_60a0e022"
+        },
+        {
+            "type": "java",
+            "name": "Launch maxReturns",
+            "request": "launch",
+            "mainClass": "shubham.maxReturns",
+            "projectName": "java_60a0e022"
+        },
+        {
+            "type": "java",
+            "name": "Launch source",
+            "request": "launch",
+            "mainClass": "shubham.source",
+            "projectName": "java_60a0e022"
+        },
+        {
+            "type": "java",
+            "name": "Launch maze",
+            "request": "launch",
+            "mainClass": "shubham.maze",
+            "projectName": "java_60a0e022"
+        },
+        {
+            "type": "java",
+            "name": "Launch multiplystrs",
+            "request": "launch",
+            "mainClass": "shubham.multiplystrs",
+            "projectName": "java_60a0e022"
+        },
+        {
+            "type": "java",
+            "name": "Launch groupAnagram",
+            "request": "launch",
+            "mainClass": "groupAnagram",
+            "projectName": "java_60a0e022"
+        },
+        {
+            "type": "java",
+            "name": "Launch candlesticks",
+            "request": "launch",
+            "mainClass": "shubham.candlesticks",
+            "projectName": "java_60a0e022"
+        },
+        {
+            "type": "java",
+            "name": "Launch bankWinner",
+            "request": "launch",
+            "mainClass": "shubham.bankWinner",
+            "projectName": "java_60a0e022"
+        },
+        {
+            "type": "java",
+            "name": "Launch maxProfit",
+            "request": "launch",
+            "mainClass": "shubham.maxProfit",
+            "projectName": "java_60a0e022"
+        },
+        {
+            "type": "java",
+            "name": "Launch security",
+            "request": "launch",
+            "mainClass": "shubham.security",
+            "projectName": "java_60a0e022"
+        },
+        {
+            "type": "java",
+            "name": "Launch binary",
+            "request": "launch",
+            "mainClass": "shubham.binary",
+            "projectName": "java_60a0e022"
+        },
+        {
+            "type": "java",
+            "name": "Launch countSubsetWithGivenSum",
+            "request": "launch",
+            "mainClass": "shubham.countSubsetWithGivenSum",
+            "projectName": "java_60a0e022"
+        },
+        {
+            "type": "java",
+            "name": "Launch equalPartitionSum",
+            "request": "launch",
+            "mainClass": "shubham.equalPartitionSum",
+            "projectName": "java_60a0e022"
+        },
+        {
+            "type": "java",
+            "name": "Launch subsetSum",
+            "request": "launch",
+            "mainClass": "shubham.subsetSum",
+            "projectName": "java_60a0e022"
+        },
+        {
+            "type": "java",
+            "name": "Launch test",
+            "request": "launch",
+            "mainClass": "shubham.test",
+            "projectName": "java_60a0e022"
+        },
+        {
+            "type": "java",
+            "name": "Launch knapsackDP",
+            "request": "launch",
+            "mainClass": "shubham.knapsackDP",
+            "projectName": "java_60a0e022"
+        },
+        {
+            "type": "java",
+            "name": "Launch knapsack",
+            "request": "launch",
+            "mainClass": "shubham.knapsack",
+            "projectName": "java_60a0e022"
+        },
+        {
+            "type": "java",
+            "name": "Launch Testthrows1",
+            "request": "launch",
+            "mainClass": "shubham.Testthrows1",
+            "projectName": "java_60a0e022"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "shubham.Main",
+            "projectName": "java_60a0e022"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "java_60a0e022"
+        }
+    ]
+}
