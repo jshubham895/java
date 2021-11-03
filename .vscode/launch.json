@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch rootToLeaf",
+            "request": "launch",
+            "mainClass": "shubham.rootToLeaf",
+            "projectName": "java_60a0e022"
+        },
+        {
+            "type": "java",
+            "name": "Launch reverseInteger",
+            "request": "launch",
+            "mainClass": "shubham.reverseInteger",
+            "projectName": "java_60a0e022"
+        },
+        {
+            "type": "java",
             "name": "Launch uniquePaths",
             "request": "launch",
             "mainClass": "shubham.uniquePaths",
