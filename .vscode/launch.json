@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch strings",
+            "request": "launch",
+            "mainClass": "shubham.strings",
+            "projectName": "java_60a0e022"
+        },
+        {
+            "type": "java",
+            "name": "Launch try1",
+            "request": "launch",
+            "mainClass": "shubham.try1",
+            "projectName": "java_60a0e022"
+        },
+        {
+            "type": "java",
+            "name": "Launch palindrome",
+            "request": "launch",
+            "mainClass": "shubham.palindrome",
+            "projectName": "java_60a0e022"
+        },
+        {
+            "type": "java",
             "name": "Launch rootToLeaf",
             "request": "launch",
             "mainClass": "shubham.rootToLeaf",

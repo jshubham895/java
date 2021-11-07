@@ -1,53 +1,103 @@
 package shubham;
 
-import java.util.Arrays;
+import java.util.*;
 
 class Solution {
+
     public static void main(String[] args) {
-
-        char[][] board = { { 'X', 'X', 'X', 'X' }, { 'X', 'O', 'O', 'X' }, { 'X', 'X', 'O', 'X' },
-                { 'X', 'O', 'X', 'X' } };
-        solve(board);
-        System.out.println(Arrays.deepToString(board));
-    }
-
-    public static void solve(char[][] board) {
-        if (board.length == 0 || board[0].length == 0)
-            return;
-        if (board.length < 3 || board[0].length < 3)
-            return;
-        int m = board.length;
-        int n = board[0].length;
-        for (int i = 0; i < m; i++) {
-            if (board[i][0] == 'O')
-                helper(board, i, 0);
-            if (board[i][n - 1] == 'O')
-                helper(board, i, n - 1);
+        Scanner sc = new Scanner(System.in);
+        int count = 0;
+        Player[] players = new Player[1001];
+        while (sc.hasNextInt()) {
+            int id = sc.nextInt();
+            String str = sc.nextLine();
+            String country = sc.nextLine();
+            String side = sc.nextLine().toLowerCase();
+            double price = sc.nextDouble();
+            players[count++] = new Player(id, country, side, price);
         }
-        for (int j = 1; j < n - 1; j++) {
-            if (board[0][j] == 'O')
-                helper(board, 0, j);
-            if (board[m - 1][j] == 'O')
-                helper(board, m - 1, j);
-        }
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
-                if (board[i][j] == 'O')
-                    board[i][j] = 'X';
-                if (board[i][j] == '*')
-                    board[i][j] = 'O';
+        String str = sc.nextLine();
+        String search = sc.nextLine().toLowerCase();
+        Player[] result = searchPlayerForMatch(search, players);
+        for (int i = 0; i < result.length; i++) {
+            if (result[i] != null) {
+                System.out.println(result[i].getId() + " ");
             }
         }
     }
 
-    private static void helper(char[][] board, int r, int c) {
-        if (r < 0 || c < 0 || r > board.length - 1 || c > board[0].length - 1 || board[r][c] != 'O')
-            return;
-        board[r][c] = '*';
-        helper(board, r + 1, c);
-        helper(board, r - 1, c);
-        helper(board, r, c + 1);
-        helper(board, r, c - 1);
+    public static Player[] searchPlayerForMatch(String search, Player[] players) {
+        // method logic
+        Player[] result = new Player[1001];
+        int count = 0;
+
+        for (int i = 0; i < players.length; i++) {
+            if (players[i] != null && players[i].getSide().equals(search))
+                result[count++] = players[i];
+        }
+
+        if (count >= 1) {
+            Arrays.sort(result, 0, count - 1, new IdComparator());
+        }
+        return result;
+
+    }
+}
+
+class IdComparator implements Comparator<Player> {
+    @Override
+    public int compare(Player p1, Player p2) {
+        return p1.getId() - p2.getId();
+    }
+}
+
+class Player {
+    int id;
+    String country;
+    String side;
+    double price;
+
+    public Player(int id, String country, String side, double price) {
+        this.id = id;
+        this.country = country;
+        this.side = side;
+        this.price = price;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public String getSide() {
+        return side;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+    public void setSide(String side) {
+        this.side = side;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    @Override
+    public String toString() {
+        return "Id: " + id + "  Country: " + country + "  Side: " + side + "  Price : " + price;
+    }
 }
