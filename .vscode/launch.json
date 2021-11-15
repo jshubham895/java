@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch dailyTemp",
+            "request": "launch",
+            "mainClass": "shubham.dailyTemp",
+            "projectName": "java_60a0e022"
+        },
+        {
+            "type": "java",
             "name": "Launch strings",
             "request": "launch",
             "mainClass": "shubham.strings",

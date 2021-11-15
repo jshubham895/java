@@ -3,12 +3,12 @@ package shubham;
 public class strings {
     public static void main(String[] args) {
         String num1 = "123";
-        String num2 = "10";
+        String num2 = "456";
         String ans = multiply(num1, num2);
         System.out.println(ans);
     }
 
-    private static String multiply(String num1, String num2) {
+    public static String multiply(String num1, String num2) {
         if ("0".equals(num1) || "0".equals(num2))
             return "0";
 
@@ -16,7 +16,7 @@ public class strings {
 
         for (int i = 0; i < num1.length(); i++) {
             for (int j = 0; j < num2.length(); j++) {
-                ans[i + j] = (num1.charAt(i) - '0') * (num2.charAt(j) - '0');
+                ans[i + j] += (num1.charAt(i) - '0') * (num2.charAt(j) - '0');
             }
         }
 
@@ -26,8 +26,9 @@ public class strings {
         }
 
         StringBuilder sb = new StringBuilder();
-        for (int i : ans)
+        for (int i : ans) {
             sb.append(i);
+        }
 
         return sb.toString();
     }
