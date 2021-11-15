@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch subsets",
+            "request": "launch",
+            "mainClass": "shubham.subsets",
+            "projectName": "java_60a0e022"
+        },
+        {
+            "type": "java",
             "name": "Launch dailyTemp",
             "request": "launch",
             "mainClass": "shubham.dailyTemp",
