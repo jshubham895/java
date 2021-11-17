@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch uniquePathss",
+            "request": "launch",
+            "mainClass": "shubham.uniquePathss",
+            "projectName": "java_60a0e022"
+        },
+        {
+            "type": "java",
             "name": "Launch subsets",
             "request": "launch",
             "mainClass": "shubham.subsets",
