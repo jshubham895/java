@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch binary",
+            "request": "launch",
+            "mainClass": "coding.binary",
+            "projectName": "java_60a0e022"
+        },
+        {
+            "type": "java",
+            "name": "Launch arraylistExample",
+            "request": "launch",
+            "mainClass": "shubham.arraylistExample",
+            "projectName": "java_60a0e022"
+        },
+        {
+            "type": "java",
             "name": "Launch uniquePathss",
             "request": "launch",
             "mainClass": "shubham.uniquePathss",
