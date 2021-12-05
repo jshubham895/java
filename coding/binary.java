@@ -1,32 +1,43 @@
 package coding;
 
-class Base {
-    int length;
-    int width;
-    int height;
-
-    public Base(int length, int width, int height) {
-        this.length = length;
-        this.width = width;
-        this.height = height;
-    }
-}
-
-class Child extends Base {
-    int weight;
-    int length;
-
-    public Child(int length, int width, int height, int weight, int l) {
-        super(length, width, height);
-        this.weight = weight;
-        this.length = l;
-    }
-}
-
 public class binary {
     public static void main(String[] args) {
-        Child c = new Child(1, 1, 1, 10, 10);
-        System.out.println(c.length);
+        run();
+        System.out.println(run(100));
+        System.out.println(run("run"));
+        System.out.println(run(false));
+        add(1, 2);
+        System.out.println(add(12.0, 15.0));
+    }
+
+    public static void run() {
+        System.out.println("Running");
+    }
+
+    public static int run(int var) {
+        return var;
+    }
+
+    public static String run(String run) {
+        return "false";
+    }
+
+    public static boolean run(boolean value) {
+        return false;
+    }
+
+    public static void add(int a, int b) {
+        int c = a + b;
+        System.out.println(c);
+    }
+
+    public static int add(int a, int b, int c) {
+        c = a + b;
+        return c;
+    }
+
+    public static double add(double a, double b) {
+        return a + b;
     }
 
 }

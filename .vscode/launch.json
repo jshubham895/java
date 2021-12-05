@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch code",
+            "request": "launch",
+            "mainClass": "coding.code",
+            "projectName": "java_60a0e022"
+        },
+        {
+            "type": "java",
+            "name": "Launch robber",
+            "request": "launch",
+            "mainClass": "shubham.robber",
+            "projectName": "java_60a0e022"
+        },
+        {
+            "type": "java",
             "name": "Launch binary",
             "request": "launch",
             "mainClass": "coding.binary",
